@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.ProductDetailsActivity"
+    android:background="@color/color1">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+
+                <ImageView
+                    android:layout_marginTop="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginLeft="5dp"
+                    android:id="@+id/product_image_details"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:scaleType="centerCrop"
+                    />
+
+                <TextView
+                    android:id="@+id/product_name_details"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/product_image_details"
+                    android:layout_marginTop="10dp"
+                    android:gravity="center"
+                    android:text="Product Name"
+                    android:textColor="@color/colorTextIcon"
+                    android:textSize="18dp"
+                    android:fontFamily="@font/bold"
+                     />
+
+                <TextView
+                    android:id="@+id/product_Description_details"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/product_name_details"
+                    android:layout_marginTop="10dp"
+                    android:gravity="center"
+                    android:text="Product Description"
+                    android:textColor="@color/colorTextIcon"
+                    android:textSize="15dp"
+                    android:fontFamily="@font/meduim" />
+
+                <TextView
+                    android:id="@+id/product_price_details"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/product_Description_details"
+                    android:layout_marginTop="10dp"
+                    android:gravity="center"
+                    android:text="Product Price"
+                    android:textColor="@color/colorTextIcon"
+                    android:textSize="15dp"
+                    android:fontFamily="@font/bold"
+                    />
+
+                <com.cepheuen.elegantnumberbutton.view.ElegantNumberButton
+                    android:id="@+id/number_Btn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/product_price_details"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="10dp"
+                    android:elevation="6dp"
+                    app:backGroundColor="@color/colorA"
+                    app:textColor="@color/colorTextIcon"
+                    app:finalNumber="10"
+                    app:initialNumber="1"
+                    app:textSize="16dp" />
+
+        <!--  <com.google.android.material.floatingactionbutton.FloatingActionButton
+              android:id="@+id/add_product_to_cart"
+              android:elevation="6dp"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_margin="15dp"
+              app:backgroundTint="@color/colorTextOther"
+              android:layout_alignParentBottom="true"
+              android:layout_alignParentRight="true"
+              app:srcCompat="@drawable/nav_cart"
+              android:backgroundTint="@color/colorTextSecondry"/>-->
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/buttonshape"
+                    android:fontFamily="@font/bold"
+                    android:layout_margin="15dp"
+                    android:layout_alignParentBottom="true"
+                    android:text="Add to Cart"
+                    android:textColor="@color/colorText"
+                    android:textSize="18dp"
+                    android:id="@+id/pd_add_to_cart_button"
+
+                    />
+
+        </LinearLayout>
+
+    </ScrollView>

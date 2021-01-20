@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".admin.AdminHomeActivity">
+
+    <TextView
+        android:id="@+id/admin_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Welcome Dear Admin"
+        android:textAlignment="center"
+        android:textSize="17dp"
+        android:textColor="@color/color1"
+        android:fontFamily="@font/bold"
+        android:layout_marginTop="10dp"/>
+
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/logout_admin_Btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="10dp"
+        android:background="@drawable/buttons"
+        android:fontFamily="@font/bold"
+        android:text="Log Out"
+        android:textAllCaps="false"
+        android:textColor="@color/colorTextIcon"
+        android:textSize="20dp" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/check_order_Btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/maintain_Btn"
+        android:layout_margin="10dp"
+        android:background="@drawable/buttonshape"
+        android:fontFamily="@font/bold"
+        android:text="Check New Orders"
+        android:textAllCaps="false"
+        android:textColor="@color/color1"
+        android:textSize="20dp" />
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/maintain_Btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/admin_title"
+        android:layout_margin="10dp"
+        android:background="@drawable/buttonshape"
+        android:fontFamily="@font/bold"
+        android:text="Maintain Products"
+        android:textAllCaps="false"
+        android:textColor="@color/color1"
+        android:textSize="20dp"/>
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/check_approve_order_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/check_order_Btn"
+        android:layout_margin="10dp"
+        android:background="@drawable/buttonshape"
+        android:fontFamily="@font/bold"
+        android:text="Check And Approve New Products"
+        android:textAllCaps="false"
+        android:textColor="@color/color1"
+        android:textSize="20dp"/>
+
+</RelativeLayout>

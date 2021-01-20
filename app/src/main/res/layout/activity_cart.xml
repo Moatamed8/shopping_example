@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.CartActivity"
+   >
+
+    <RelativeLayout
+        android:id="@+id/realtive"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentTop="true"
+        android:background="@color/color1">
+        <TextView
+            android:id="@+id/totalPrice"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Total Price ="
+            android:textAlignment="center"
+            android:textColor="@color/colorTextIcon"
+            android:textSize="20dp"
+            android:fontFamily="@font/bold"
+            android:layout_marginTop="10dp"
+            />
+
+    </RelativeLayout>
+    <TextView
+        android:id="@+id/msgll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/moataimage"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:fontFamily="@font/bold"
+        android:gravity="center"
+        android:layout_marginTop="150dp"
+        android:text="Congratulation,...."
+        android:textAlignment="center"
+        android:textColor="#2AD62A"
+        android:visibility="gone"
+        android:textSize="20dp"
+
+        />
+    <ImageView
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:id="@+id/moataimage"
+        android:layout_below="@+id/msgll"
+        android:visibility="gone"
+        android:background="@drawable/congratu"
+        />
+    <TextView
+        android:id="@+id/msgl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/moataimage"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:fontFamily="@font/bold"
+        android:text="your final order has been placed successfully. soon it will be Verified."
+        android:textAlignment="center"
+        android:textColor="#2AD62A"
+        android:textSize="20dp"
+        android:visibility="gone"
+
+        />
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/cart_list"
+        android:layout_below="@+id/realtive"
+        android:layout_above="@+id/buttonNext"
+
+        />
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/buttonNext"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:textColor="@color/colord2"
+            android:background="@drawable/buttonshape"
+            android:text="Next"
+            android:fontFamily="@font/bold"
+            android:layout_margin="10dp"
+            android:textSize="20dp"/>
+
+</RelativeLayout>

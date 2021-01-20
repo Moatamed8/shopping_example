@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_margin="10dp"
+    app:cardElevation="15dp">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/color1"
+        android:padding="10dp">
+        <TextView
+            android:id="@+id/cart_product_name"
+            android:layout_width="160dp"
+            android:layout_height="wrap_content"
+            android:text="Product Name"
+            android:textColor="@color/colorTextIcon"
+            android:textSize="14dp"
+            android:layout_marginLeft="5dp"
+            android:fontFamily="@font/bold"
+            />
+
+        <TextView
+            android:id="@+id/cart_product_quantity"
+            android:layout_width="160dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_marginLeft="6dp"
+            android:layout_marginRight="5dp"
+            android:fontFamily="@font/bold"
+            android:text="Product Quantity"
+            android:textAlignment="textEnd"
+            android:textColor="@color/colorTextIcon"
+            android:textSize="14dp" />
+
+        <TextView
+            android:id="@+id/cart_product_price"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Product Price"
+            android:textColor="@color/colorTextIcon"
+            android:textSize="14dp"
+            android:fontFamily="@font/bold"
+            android:layout_below="@id/cart_product_quantity"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            />
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>
